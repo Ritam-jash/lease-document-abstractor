@@ -1,0 +1,48 @@
+<!-- "7 PM FINAL TRY" -->
+ <!-- THIS IS MY upload.html FILE -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Lease Document Abstractor</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+ <body>
+     <header>
+         <div class="container">
+             <h1>Lease Document Abstractor</h1>
+             <p>Automate your lease document processing with ease</p>
+         </div>
+     </header>
+ 
+     <main>
+         <div class="container">
+             <section class="upload-section">
+                 <h2>Upload Your Lease Document</h2>
+                 <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                     <label for="document">Choose PDF File</label>
+                     <input type="file" name="document" id="document" accept=".pdf">
+                     <button type="submit">Upload</button>
+                 </form>
+             </section>
+ 
+             <section class="features-section">
+                 <h2>Features</h2>
+                 <ul>
+                     <li>Automated PDF processing</li>
+                     <li>Accurate clause extraction</li>
+                     <li>Organized lease information</li>
+                     <li>Easy data retrieval</li>
+                 </ul>
+             </section>
+         </div>
+     </main>
+ 
+     <footer>
+         <div class="container">
+             <p>&copy; 2024 Odin Automation Solutions. All rights reserved.</p>
+         </div>
+     </footer>
+ </body>
+ </html>
+ 

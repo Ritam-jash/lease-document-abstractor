@@ -1,0 +1,105 @@
+
+ <!-- "8 PM FINAL TRY" -->
+ <!-- THIS IS MY view.html FILE -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>View Abstracts</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+ </head>
+ <body>
+     <header>
+         <div class="container">
+             <h1>Lease Document Abstractor - Abstracts</h1>
+             <p>View the extracted information from uploaded lease documents</p>
+         </div>
+     </header>
+ 
+     <main>
+         <div class="container">
+             <section class="abstracts-section">
+                 <h2>Uploaded Lease Abstracts</h2>
+                 <table>
+                     <thead>
+                         <tr>
+                             <th>Filename</th>
+                             <th>Clauses</th>
+                             <th>View PDF</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         {% for lease in leases %}
+                         <tr>
+                             <td>{{ lease.filename }}</td>
+                             <td>{{ lease.clauses }}</td>
+                             <td><a href="{{ url_for('uploaded_file', filename=lease.filename) }}" target="_blank">View PDF</a></td>
+                         </tr>
+                         {% endfor %}
+                     </tbody>
+                 </table>
+             </section>
+         </div>
+     </main>
+ 
+     <footer>
+         <div class="container">
+             <p>&copy; 2024 Odin Automation Solutions. All rights reserved.</p>
+         </div>
+     </footer>
+ </body>
+ </html>
+  -->
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Abstracts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lease Document Abstractor - Abstracts</h1>
+            <p>View the extracted information from uploaded lease documents</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="abstracts-section">
+                <h2>Uploaded Lease Abstracts</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Filename</th>
+                            <th>Clauses</th>
+                            <th>View PDF</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for lease in leases %}
+                        <tr>
+                            <td>{{ lease.filename }}</td>
+                            <td>{{ lease.clauses }}</td>
+                            <td><a href="{{ url_for('uploaded_file', filename=lease.filename) }}" target="_blank">View PDF</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Odin Automation Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
