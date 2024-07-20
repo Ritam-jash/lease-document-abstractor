@@ -36,7 +36,7 @@ Lease Document Abstractor is a web application that automates the process of ext
 2. **Create a virtual environment and activate it:**
     ```sh
     python -m venv venv
-    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate   
     ```
 
 3. **Install the required dependencies:**
